@@ -22,4 +22,4 @@ Reactive uses SQLite3 as its database. Please setup SQLite3 before using Reactiv
 
 ```has_many(name, options)``` - creates an HasManyOptions instance to create an association between two database tables; then, it creates an association with 'name' to access the associated objects.
 
-```has_one_through(name, through_name, source_name)``` - creates an association between two objects through an existing assocation. Goes through two ::belongs_to methods in order to access the associated object. Then, defines a method as an association with 'name' to access the associated object.
+```has_one_through(name, through_name, source_name)``` - creates an association between two objects through an existing assocation. Goes through two ```::belongs_to``` methods in order to access the associated object. Then, defines a method as an association with 'name' to access the associated object.
