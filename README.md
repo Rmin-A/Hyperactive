@@ -1,9 +1,9 @@
-##Reactive
+## Reactive
 An ORM inspired by Ruby on Rails' Active Record. Reactive uses complex SQL queries to communicate with a SQLite Database. By manipulating the data retrieved, Reactive creates objects with simplified methods (shown below) for effective communication between developer and database.
 
-##Setup Reactive uses SQLite3 as its database. Please follow the link and download SQLite3 before using Reactive.
+## Setup Reactive uses SQLite3 as its database. Please follow the link and download SQLite3 before using Reactive.
 
-##Methods and Associations
+## Methods and Associations
 
 all - returns all rows within the object's table
 find(id) - returns an SQLObject with the given id
