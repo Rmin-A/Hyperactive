@@ -6,7 +6,7 @@ Reactive uses SQLite3 as its database. Please setup SQLite3 before using Reactiv
 
 ## Methods and Associations
 
-all - returns all rows within the object's table.
+```all``` - returns all rows within the object's table.
 
 find(id) - returns an SQLObject with the given id.
 
