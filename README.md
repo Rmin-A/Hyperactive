@@ -7,6 +7,7 @@ Reactive uses SQLite3 as its database. Please setup SQLite3 before using Reactiv
 ## Methods and Associations
 
 ```all``` - returns all rows within the object's table.
+
 ```find(id)``` - returns an SQLObject with the given id.
 
 ```where(params)``` - takes a hash as an argument and returns an array of SQL objects that follow the key/value pairs given.
