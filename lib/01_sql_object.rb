@@ -1,4 +1,8 @@
 require_relative 'db_connection'
+require_relative '02_searchable'
+require_relative '03_associatable'
+require_relative '04_associatable2'
+
 require 'active_support/inflector'
 require 'byebug'
 
