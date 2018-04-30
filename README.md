@@ -1,8 +1,21 @@
 ## Reactive
-An ORM inspired by Ruby on Rails' Active Record. Reactive uses complex SQL queries to communicate with a SQLite Database. By manipulating the data retrieved, Reactive creates objects with simplified methods (shown below) for effective communication between developer and database.
+An ORM inspired by Ruby on Rails' Active Record. Reactive uses SQL queries to communicate with a SQLite Database. By manipulating the data retrieved, Reactive creates objects with simplified methods (shown below) for effective communication between developer and database.
 
-## Setup 
+## Setup
 Reactive uses SQLite3 as its database. Please setup SQLite3 before using Reactive.
+1. Clone the repo.
+2. Navigate into the ReactiveRecord directory in the terminal.
+3. Run bundle install and create the database file:
+```
+bundle install
+cat cars.sql | sqlite3 cars.db
+```
+
+4. Start pry and load the entry file:
+```
+pry
+load 'hyperactive.rb'
+```
 
 ## Methods and Associations
 
@@ -22,4 +35,4 @@ Reactive uses SQLite3 as its database. Please setup SQLite3 before using Reactiv
 
 ```has_many(name, options)``` - creates an HasManyOptions instance to create an association between two database tables; then, it creates an association with 'name' to access the associated objects.
 
-```has_one_through(name, through_name, source_name)``` - creates an association between two objects through an existing assocation. Goes through two ```::belongs_to``` methods in order to access the associated object. Then, defines a method as an association with 'name' to access the associated object.
+```has_one_through(name, through_name, source_name)``` - creates an association between two objects through an existing association. Goes through two ```::belongs_to``` methods in order to access the associated object. Then, defines a method as an association with 'name' to access the associated object.
